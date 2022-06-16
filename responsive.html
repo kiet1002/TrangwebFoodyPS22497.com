@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js""></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        nav{
+            background-color: #273c75;
+        }
+        #main-menu{
+            display: flex;
+        }
+        nav #main-menu li a{
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+        }
+        nav #main-menu li:hover a{
+            background: #c23616;
+            transition: all 0,3s;
+        }
+        #toggle{
+            display: none;
+            background: #353b48;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px){
+            #main-menu{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    <script>
+        $(documen).ready(function () {
+            $('#toggle').click(function () {
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+    <div id=" wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <li>
+                        <a href="style.html">Tất cả</a>
+                    </li>
+                    <li>
+                        <a href="trangchu1.html">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="doan.html">Đồ ăn</a>
+                    </li>
+                    <li>
+                        <a href="douong.html">Đồ uốn</a>
+                    </li>
+                    <li>
+                        <a href="dochay.html">Đồ chay</a>
+                    </li>
+                    <li>
+                        <a href="#">Bánh kem</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
